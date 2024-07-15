@@ -1,0 +1,2 @@
+User-Agent: *
+Sitemap: https://productsolo.github.io/sitemap.xml
