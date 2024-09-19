@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2024, Product Solo.</copyright>
-    <lastBuildDate>Wed, 11 Sep 2024 04:03:45 +0700</lastBuildDate><atom:link href="https://productsolo.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Sep 2024 17:47:40 +0700</lastBuildDate><atom:link href="https://productsolo.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pentingnya Membuat Design System Di Dalam Project UI UX Design</title>
+      <link>https://productsolo.github.io/blog/pentingnya-membuat-design-system-di-dalam-proyek-ui-ux-design/</link>
+      <pubDate>Thu, 19 Sep 2024 17:47:40 +0700</pubDate>
+      
+      <guid>https://productsolo.github.io/blog/pentingnya-membuat-design-system-di-dalam-proyek-ui-ux-design/</guid>
+      <description>Oleh Thariq Luqmana
+Awalan Bayangkan bekerja dalam sebuah tim besar untuk membuat sebuah produk digital, tapi setiap kali Anda memulai sebuah halaman atau fitur baru, desainnya terasa tidak konsisten. Ada perbedaan warna di setiap halaman, tombol-tombol memiliki gaya yang berbeda-beda, dan elemen UI (User Interface) terlihat tak selaras. Ini membuat tim Anda frustrasi, memperlambat pekerjaan, dan bisa berujung pada pengalaman pengguna yang buruk. Apakah ada solusi? Tentu saja ada, dan jawabannya adalah Design System!</description>
+    </item>
+    
     <item>
       <title>Dari ngelamun ke action, panduan membuat projek UI UX yang inovatif agar dipandang masyarakat dan HRD.</title>
       <link>https://productsolo.github.io/blog/panduan-membuat-project-ui-ux-yang-inovatif/</link>

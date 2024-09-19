@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta name="google-site-verification" content="NR7I9MTeF_GAui9m6h9_Yq67Wn3nqTQA9SKHqlRSlLg" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FTM970D0MG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FTM970D0MG');
+</script>
+
+<script src="https://kit.fontawesome.com/30503a84c7.js" crossorigin="anonymous"></script>
+
+  <link rel="icon" type="image/png" href="images/productsolo-logo.png">
+  <link rel="canonical" href="https://productsolo.github.io">
+  
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pentingnya Membuat Design System Di Dalam Project UI UX Design | Product Solo: Product Management for Everyone.</title>
+<meta name="title" content="Pentingnya Membuat Design System Di Dalam Project UI UX Design" />
+<meta name="description" content="Kalau kamu pengen desain yang hasilnya oke, nggak cuma cantik tapi juga enak dipakai, jangan skip langkah penting ini: wireframe. Pentingnya Membuat Design System Di Dalam Project UI UX Design." />
+<meta name="keywords" content="UI UX Design," />
+
+
+<meta property="og:title" content="Pentingnya Membuat Design System Di Dalam Project UI UX Design" />
+<meta property="og:description" content="Kalau kamu pengen desain yang hasilnya oke, nggak cuma cantik tapi juga enak dipakai, jangan skip langkah penting ini: wireframe. Pentingnya Membuat Design System Di Dalam Project UI UX Design." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://productsolo.github.io/blog/pentingnya-membuat-design-system-di-dalam-proyek-ui-ux-design/" />
+<meta property="article:published_time" content="2024-09-19T17:47:40+07:00" />
+<meta property="article:modified_time" content="2024-09-19T17:47:40+07:00" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Pentingnya Membuat Design System Di Dalam Project UI UX Design"/>
+<meta name="twitter:description" content="Kalau kamu pengen desain yang hasilnya oke, nggak cuma cantik tapi juga enak dipakai, jangan skip langkah penting ini: wireframe. Pentingnya Membuat Design System Di Dalam Project UI UX Design."/>
+
+
+
+<meta itemprop="name" content="Pentingnya Membuat Design System Di Dalam Project UI UX Design">
+<meta itemprop="description" content="Kalau kamu pengen desain yang hasilnya oke, nggak cuma cantik tapi juga enak dipakai, jangan skip langkah penting ini: wireframe. Pentingnya Membuat Design System Di Dalam Project UI UX Design.">
+<meta itemprop="datePublished" content="2024-09-19T17:47:40+07:00" />
+<meta itemprop="dateModified" content="2024-09-19T17:47:40+07:00" />
+<meta itemprop="wordCount" content="970">
+
+
+
+<meta itemprop="keywords" content="UI UX Design," />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Product Solo: Product Management for Everyone.</h2>
+</a>
+<nav><a href="/">Home</a>
+
+<a href="/about/">About</a>
+
+<a href="/collaboration/">Collaboration</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Pentingnya Membuat Design System Di Dalam Project UI UX Design</h1>
+<p>
+  <i>
+    <time datetime='2024-09-19' pubdate>
+      19 Sep, 2024
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>Oleh <strong>Thariq Luqmana</strong></p>
+<p><img src="../../images/cover.png" alt="image"></p>
+<h2 id="awalan">Awalan</h2>
+<p>Bayangkan bekerja dalam sebuah tim besar untuk membuat sebuah produk digital, tapi setiap kali Anda memulai sebuah halaman atau fitur baru, desainnya terasa tidak konsisten. Ada perbedaan warna di setiap halaman, tombol-tombol memiliki gaya yang berbeda-beda, dan elemen UI (User Interface) terlihat tak selaras. Ini membuat tim Anda frustrasi, memperlambat pekerjaan, dan bisa berujung pada pengalaman pengguna yang buruk. Apakah ada solusi? Tentu saja ada, dan jawabannya adalah Design System!</p>
+<p>Design System adalah penyelamat yang dapat membuat proses desain lebih terorganisir, konsisten, dan efisien. Bukan hanya itu, design system juga membantu menyatukan tim, memastikan pengalaman pengguna yang seragam, dan membuat semua pihak merasa lebih nyaman bekerja di dalamnya.
+Dalam artikel ini, kita akan membahas secara mendalam tentang pentingnya membuat design system dalam setiap project UI/UX, mengapa ini penting, dan bagaimana Anda bisa mulai membuatnya sendiri.</p>
+<h2 id="apa-itu-design-system-dan-kenapa-anda-harus-peduli">Apa Itu Design System dan Kenapa Anda Harus Peduli?</h2>
+<p>Design system adalah sebuah kumpulan komponen desain yang bisa digunakan kembali di seluruh produk digital. Ini mencakup gaya visual (warna, tipografi, spasi), komponen UI (tombol, form, navigasi), dan bahkan panduan pengembangan. Design system bertindak sebagai &ldquo;kit&rdquo; yang memungkinkan tim desain dan pengembangan untuk membuat produk yang konsisten dan scalable, tanpa harus mendesain dari awal setiap kali.</p>
+<h4 id="mengapa-design-system-penting-dalam-project-uiux">Mengapa Design System Penting dalam Project UI/UX?</h4>
+<ol>
+<li><strong>Konsistensi Desain:</strong> Setiap elemen UI akan terlihat dan berfungsi dengan cara yang sama di seluruh produk, yang berarti pengguna tidak akan kebingungan karena tampilan atau pengalaman yang berbeda di setiap halaman atau fitur. Konsistensi sangat penting untuk menciptakan pengalaman pengguna yang mulus dan memuaskan.</li>
+<li><strong>Efisiensi Kerja:</strong> Tanpa design system, tim desain harus terus-menerus membuat komponen UI baru, yang tidak hanya memakan waktu tapi juga rentan terhadap inkonsistensi. Dengan design system, desainer dan developer bisa menggunakan komponen yang sudah ada, mempercepat proses kerja.</li>
+<li><strong>Kolaborasi yang Lebih Mudah:</strong> Design system menyatukan tim desain dan pengembangan, karena semua orang bekerja berdasarkan komponen dan panduan yang sama. Tidak ada kebingungan mengenai gaya desain atau cara implementasi. Ini mengurangi miskomunikasi dan membuat kolaborasi antar tim menjadi lebih lancar.</li>
+<li><strong>Mudah untuk Dikembangkan:</strong> Design system memungkinkan produk untuk terus berkembang dengan cepat dan mudah. Ketika ada perubahan pada komponen UI, perubahan ini hanya perlu dilakukan sekali, dan seluruh produk akan diperbarui secara otomatis. Ini membuat skalabilitas menjadi lebih mudah.</li>
+<li><strong>Pengalaman Pengguna yang Lebih Baik:</strong> Dengan desain yang konsisten, pengguna merasa lebih nyaman dan mudah menavigasi aplikasi atau situs web Anda. Mereka tahu apa yang diharapkan di setiap halaman karena komponen dan tampilan yang seragam. Ini meningkatkan pengalaman pengguna secara keseluruhan.</li>
+</ol>
+<h2 id="bagaimana-cara-membuat-design-system-yang-kuat">Bagaimana Cara Membuat Design System yang Kuat?</h2>
+<p>Membuat design system mungkin terdengar menakutkan, tetapi dengan mengikuti beberapa langkah ini, Anda bisa membangunnya dengan baik dan menyenangkan!</p>
+<ol>
+<li>
+<p><strong>Mulai dengan Inventarisasi Desain Langkah pertama</strong> adalah melakukan audit terhadap desain yang sudah ada. Periksa semua komponen desain yang saat ini digunakan di dalam produk Anda. Apa yang konsisten? Apa yang berbeda-beda? Setelah Anda menginventarisasi semuanya, Anda bisa mulai menentukan komponen mana yang perlu dipertahankan, diperbaiki, atau diganti.</p>
+</li>
+<li>
+<p><strong>Definisikan Prinsip Desain Design system yang baik</strong> dimulai dengan prinsip desain yang kuat. Prinsip ini akan menjadi panduan untuk membuat keputusan desain ke depannya. Misalnya, apakah Anda ingin desain Anda minimalis dan modern, atau kaya warna dan detail? Prinsip ini harus mencerminkan visi merek dan pengalaman pengguna yang ingin Anda ciptakan.</p>
+</li>
+<li>
+<p><strong>Tentukan Elemen UI Utama Elemen-elemen</strong> seperti warna, tipografi, spasi, ikonografi, dan tombol adalah fondasi dari design system. Definisikan gaya untuk masing-masing elemen ini dan buat panduan yang jelas tentang cara menggunakannya. Sebagai contoh, tentukan palet warna primer dan sekunder, jenis font yang akan digunakan, serta jarak antar elemen di setiap halaman.</p>
+</li>
+<li>
+<p><strong>Buat Komponen yang Bisa Digunakan Ulang</strong> Salah satu tujuan utama design system adalah memungkinkan komponen UI untuk digunakan kembali di berbagai tempat. Komponen ini bisa mencakup tombol, form input, kartu, modals, dan sebagainya. Pastikan setiap komponen memiliki variasi yang bisa disesuaikan, tetapi tetap konsisten secara visual.</p>
+</li>
+<li>
+<p><strong>Buat Dokumentasi yang Jelas Dokumentasi</strong> adalah jantung dari design system. Semua elemen dan komponen harus didokumentasikan dengan jelas agar semua orang di tim tahu cara menggunakannya. Dokumentasi ini harus mencakup contoh penggunaan, aturan desain, dan bahkan panduan pengembangan. Ini akan menjadi referensi utama bagi desainer dan developer ketika bekerja dengan design system.</p>
+</li>
+<li>
+<p><strong>Lakukan Iterasi Secara Teratur Design system</strong> bukanlah sesuatu yang selesai dalam satu waktu. Ini adalah dokumen yang hidup dan harus diperbarui secara berkala. Saat produk Anda berkembang, begitu juga dengan design system. Pastikan untuk melakukan iterasi dan memperbarui komponen atau elemen UI sesuai kebutuhan.</p>
+</li>
+</ol>
+<h2 id="tools-yang-dapat-membantu-dalam-pembuatan-design-system">Tools yang Dapat Membantu dalam Pembuatan Design System</h2>
+<p>Berikut beberapa tools yang dapat membantu Anda membuat dan mengelola design system dengan lebih efisien:</p>
+<ul>
+<li><strong>Sketch &amp; Figma:</strong> Platform desain ini memungkinkan Anda membuat komponen UI reusable dan mendokumentasikan design system dengan mudah.</li>
+<li><strong>Zeplin &amp; InVision:</strong> Tools ini membantu menghubungkan desainer dengan developer untuk memudahkan proses pengembangan.</li>
+<li><strong>Storybook:</strong> Digunakan oleh tim developer untuk mengelola dan mengembangkan komponen UI secara modular.</li>
+</ul>
+<h2 id="mulailah-membangun-design-system-anda-hari-ini">Mulailah Membangun Design System Anda Hari Ini!</h2>
+<p>Dengan semua manfaat yang ditawarkan oleh design system, tidak ada alasan untuk menunda memulai proyek ini. Design system akan menghemat waktu, mengurangi frustasi, dan meningkatkan kolaborasi antara tim desain dan pengembangan. Lebih penting lagi, ini akan memberikan pengalaman pengguna yang lebih konsisten dan menyenangkan.</p>
+<p>Apakah Anda seorang desainer, developer, atau product manager, design system adalah alat yang sangat berharga yang bisa membawa proyek UI/UX Anda ke level berikutnya. Jangan takut untuk memulai dari yang kecil, karena setiap langkah yang diambil menuju sistem yang lebih baik akan memberikan dampak besar dalam jangka panjang.</p>
+<p>Sekaranglah waktunya! Coba mulai dengan mengaudit desain yang sudah ada, buat komponen reusable pertama Anda, dan mulai dokumentasikan semua elemen UI dengan jelas. Ajak tim Anda untuk berkolaborasi, dan lihat seberapa cepat design system akan meningkatkan kualitas dan efisiensi proyek UI/UX Anda.
+Design system bukan hanya tentang desain yang cantik, tapi juga tentang menciptakan produk yang mudah digunakan, efektif, dan scalable. Mulailah hari ini, dan nikmati keuntungannya untuk waktu yang lama!</p>
+
+</content>
+<p>
+  
+  <a href="https://productsolo.github.io/tags/ui-ux-design/">#UI UX Design</a>
+  
+</p>
+
+  </main>
+  <footer>Made by <b>Product Solo.</b> <br>
+    <p>Follow us &nbsp;</p>
+    <a href="https://www.linkedin.com/company/product-solo" target="_blank"><i class="fa-brands fa-linkedin"></i></a></footer>
+
+    </body>
+
+</html>
