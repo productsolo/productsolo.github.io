@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta name="google-site-verification" content="NR7I9MTeF_GAui9m6h9_Yq67Wn3nqTQA9SKHqlRSlLg" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FTM970D0MG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FTM970D0MG');
+</script>
+
+<script src="https://kit.fontawesome.com/30503a84c7.js" crossorigin="anonymous"></script>
+
+  <link rel="icon" type="image/png" href="images/productsolo-logo.png">
+  <link rel="canonical" href="https://productsolo.github.io">
+  
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Analisa Dan Membongkar Aplikasi inDrive dalam Product Management | Product Solo: Product Management for Everyone.</title>
+<meta name="title" content="Product Teardwon: Analisa Dan Membongkar Aplikasi inDrive dalam Product Management" />
+<meta name="description" content="Product Solo mencoba untuk membedah dan menganalisa aplikasi ride hailing yang bernama InDrive yang berasal dari Rusia dan telah beropasi lama di Indonesia dalam segi manajemen produk." />
+<meta name="keywords" content="Product Management,Product Teardown, inDrive, Product Solo" />
+
+
+<meta property="og:title" content="Product Teardwon: Analisa Dan Membongkar Aplikasi inDrive dalam Product Management" />
+<meta property="og:description" content="Product Solo mencoba untuk membedah dan menganalisa aplikasi ride hailing yang bernama InDrive yang berasal dari Rusia dan telah beropasi lama di Indonesia dalam segi manajemen produk." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://productsolo.github.io/blog/analisa-dan-membongkar-aplikasi-indrive/" />
+<meta property="article:published_time" content="2024-10-02T18:50:36+07:00" />
+<meta property="article:modified_time" content="2024-10-02T18:50:36+07:00" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Product Teardwon: Analisa Dan Membongkar Aplikasi inDrive dalam Product Management"/>
+<meta name="twitter:description" content="Product Solo mencoba untuk membedah dan menganalisa aplikasi ride hailing yang bernama InDrive yang berasal dari Rusia dan telah beropasi lama di Indonesia dalam segi manajemen produk."/>
+
+
+
+<meta itemprop="name" content="Product Teardwon: Analisa Dan Membongkar Aplikasi inDrive dalam Product Management">
+<meta itemprop="description" content="Product Solo mencoba untuk membedah dan menganalisa aplikasi ride hailing yang bernama InDrive yang berasal dari Rusia dan telah beropasi lama di Indonesia dalam segi manajemen produk.">
+<meta itemprop="datePublished" content="2024-10-02T18:50:36+07:00" />
+<meta itemprop="dateModified" content="2024-10-02T18:50:36+07:00" />
+<meta itemprop="wordCount" content="823">
+
+
+
+<meta itemprop="keywords" content="Product Management,Product Teardown, inDrive, Product Solo" />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Product Solo: Product Management for Everyone.</h2>
+</a>
+<nav><a href="/">Home</a>
+
+<a href="/about/">About</a>
+
+<a href="/collaboration/">Collaboration</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Analisa Dan Membongkar Aplikasi inDrive dalam Product Management</h1>
+<p>
+  <i>
+    <time datetime='2024-10-02' pubdate>
+      02 Oct, 2024
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>oleh <strong>Mochammad Ihza Rizky Karim</strong></p>
+<p><img src="../../images/cover.png" alt="Product Teardown: Analisa Dan Membongkar Aplikasi Indrive"></p>
+<h2 id="awalan">Awalan</h2>
+<p>inDrive adalah layanan transportasi online internasional dengan lebih dari 150 juta pengguna yang beroperasi di lebih dari 700 kota di 47 negara. Berkantor pusat di Mountain View, California, Amerika Serikat. InDrive adalah aplikasi berbagi tumpangan dan taksi terbesar kedua di dunia berdasarkan unduhan.</p>
+<p>inDrive merupakan aplikasi Ride Hailing yang bisa dibilang cukup populer di Indonesia. InDrive juga cukup murah dan simple dibanding dengan kompetitor lainna seperti Grab dan GoJek. Namun, dari simple inilah yang menjadi kelemahan dari InDrive dan sangat mudah dikalahkan oleh kompetitor lainnya. Dalam artikel ini, penulis akan membahas dan membongkar mengenai InDrive mulai dari kelebihan, kelemahan, peluang dan saran pengembangan dalam segi <strong>Product Management</strong>.</p>
+<h2 id="pembahasan">Pembahasan</h2>
+<p>Pada pembahasan Product Teardown kali ini, saya akan coba membreakdown produk inDriver secara menyeluruh dan ringkas.</p>
+<h3 id="masalah">Masalah</h3>
+<p>Diketahui bersama bahwa inDrive sebenernya punya banyak kelemahan dibanding lainnya, berikut problem yang dipunyai oleh inDrive:</p>
+<ol>
+<li>Jika dibandingkan kompetitor lainnya seperti Grab dan GoJek, inDrive tidak mempunyai opsi pembayaran yang beragam, ini menjadi masalah karena membuat user terbatasi opsi pembayarannya.</li>
+<li>inDrive memiliki masalah dalam keakuratan pemilihan driver yang tidak sesuai, antara di aplikasi dan sebenarnya tidak sama jaraknya. Akibatnya, driver mengeluh jauhnya tempat pengambilan penumpang.</li>
+<li>inDrive tidak menyediakan fitur penjemputan makanan dan minuman yang sebenarnya bisa berguna sekali.</li>
+</ol>
+<h3 id="prioritas-masalah">Prioritas Masalah</h3>
+<ol>
+<li>inDrive memiliki masalah dalam keakuratan pemilihan driver yang tidak sesuai, antara di aplikasi dan sebenarnya tidak sama jaraknya.</li>
+</ol>
+<h3 id="user-persona">User Persona</h3>
+<ul>
+<li><strong>Nama:</strong> John Doe (disamarkan)</li>
+<li><strong>Umur:</strong> 26 Tahun</li>
+<li><strong>Pekerjaan:</strong> Profesional</li>
+<li><strong>Kepribadian:</strong> Bersemangat</li>
+<li><strong>Gender:</strong> Pria</li>
+<li><strong>Pekerjaan:</strong> Business Development</li>
+</ul>
+<h4 id="biodata">Biodata</h4>
+<p>John Doe adalah seorang profesional muda yang memiliki tugas sebagai business development. Sebagai seorang business develoment, Joh Doe memiliki mobilitas pekerjaan yang sangat tinggi, itulah mengapa john doe membutuhkan transportasi cepat dan murah. John Doe biasa dalam kesehariannya menggunakan inDrive untuk mobilitas ke klien-kliennya. Namun, masalah mulai muncul ketika john doe seringkali mengalami cancel mendadak dari ddriver karena jarak titik jemput terlal jauh, padahal di keterangan aplikasi inDrive, terlihat jarak dekat dan hanya membutuhkan beberappa menit saja.</p>
+<h4 id="pain-point">Pain Point</h4>
+<ol>
+<li>Frustrasi driver tiba-tiba cancel karena jarak jemput terlalu jauh</li>
+<li>Hanya ada 2 pilihan pembayaran cash dan 1 e-wallet saja</li>
+<li>Tidak bisa menambah rute perjalanan</li>
+</ol>
+<h4 id="goals">Goals</h4>
+<ol>
+<li>Ingin mendapatkan driver yang sesuai jarak pada aplikasi, tanaa cancel mendadak</li>
+<li>Metode pembayaran banyak pilihan / opsi</li>
+</ol>
+<h3 id="hipotesa">Hipotesa</h3>
+<ol>
+<li>Jika saya <strong>memperbaiki keakuratan jarak</strong> penjemputan di aplikasi dan di lapangan, <strong>maka</strong> tingkat order akan semakin banyak.</li>
+<li>Jika <strong>opsi pembayaran</strong> ditambahkan 1 lagi untuk e-wallet, dan 1 lagi untuk bank, <strong>maka</strong> tingkat transaksi dan order ojek semakin banyak.</li>
+</ol>
+<h3 id="perencanaan-riset-dan-pengembangan">Perencanaan Riset dan Pengembangan</h3>
+<ol>
+<li><strong>User Research:</strong> Riset Interview ke 5 user, Sebar kuesioner ke 20 orang.</li>
+<li><strong>Target User:</strong> 25 orang</li>
+<li><strong>Demografi:</strong> Surabaya dan sekitarnya.</li>
+<li><strong>Gender:</strong> Pria dan Wanita</li>
+</ol>
+<h4 id="daftar-pertanyaan-untuk-riset-pengguna">Daftar pertanyaan untuk riset pengguna</h4>
+<ol>
+<li>Berapa kali order indrive sepeda motor atau mobil dalam 1 pekan?</li>
+<li>Berapa kali dalam 1 pekan orderan kamu dibatalkan oleh driver?</li>
+<li>Rata-rata dalam 1 pekan, berapa jarak tempuh kamu menggunakan indrive?</li>
+<li>Kenapa kamu lebih memilih menggunakan inDrive dariada lainnya?</li>
+<li>Ceritakan pengalaman perjalanmu selama menggunakan inDrive?</li>
+<li>Rata-rata kamu memberi rating pada driver dengan bintang berapa? alasannya?</li>
+<li>Metode pembayaran apa yang sering kamu pakai dalam aplikasi inDriver? alasannya?</li>
+<li>Ketika mengalami cancel oleh driver inDriver, apa yang kamu lakukan? alasannya?</li>
+</ol>
+<h3 id="user-journey">User Journey</h3>
+<ol>
+<li>Fase Pertama, user memakai aplikasi ride hailing seperti gojek dan grab, namun bosan dan mencari yang lebih murah dalam pembayaran. <strong>(Media Pencarian aplikasi melalui playstore)</strong>.</li>
+<li>Fase Kedua, user menemukan inDriver dan mulai mencari tau fitur yang tersedia di inDrive. <strong>(Melalui Playstore)</strong>.</li>
+<li>Fase Ketiga, user mencoba daftar dan pertama kali order dengan inDriver. <strong>(Aplikasi inDrive)</strong></li>
+<li>Fase Keempat, user mulai frustrasi jika sering ada cancel mendadak karena jarak penjemputan tidak sesuai di inDrive. <strong>(Aplikasi inDriver)</strong></li>
+<li>Fase Kelima, user tetap menggunakan inDrive karena nyaman dengan penggunaan inDriver yang simple dan murah biaya.</li>
+</ol>
+<h3 id="solusi">Solusi</h3>
+<ol>
+<li>Memperbaiki keakuratan jarak penjemputan driver ke user.</li>
+<li>Menambah metode pembayaran.</li>
+</ol>
+<h3 id="prioritas-solusi">Prioritas Solusi</h3>
+<ol>
+<li>Memperbaiki keakuratan jarak penjemputan driver ke user. <strong>(Prioritas 1)</strong></li>
+<li>Menambah metode pembayaran. <strong>(Prioritas 2)</strong></li>
+</ol>
+<h3 id="fitur">Fitur</h3>
+<ol>
+<li><strong>Near Shoot Location:</strong> langsung menampilkan secara akurat driver di sekitar titik penjemputan maksimal jarak 1 km.</li>
+<li><strong>Multi Payment:</strong> Pembayaran beragam dengan penambahan e-wallet dan bank.</li>
+</ol>
+<h3 id="product-roadmap">Product Roadmap</h3>
+<ol>
+<li>Awal Januari 2025 - Awal Februari 2025: Near Shoot Location
+-> 1.1. Team Developer, Design and DevOps.</li>
+<li>Pertengahan Februari 2025 - Awal Maret 2025: Multi Payment
+-> 2.1. Team Developer, Design and DevOps.</li>
+</ol>
+<h3 id="north-star-metric">North Star Metric</h3>
+<p>Jumlah order yang selesai per hari / minggu.</p>
+<h3 id="mitigasi-resiko">Mitigasi Resiko</h3>
+<p>Sebagai berikuti resiko yang dapat muncul jika menerapkan solusi diatas.</p>
+<h4 id="resiko">Resiko:</h4>
+<ol>
+<li>Persaingan driver semakin ketat karena dalam 1 area berdekatan</li>
+<li>Pembayaran bisa memiliki admin fee bank beragam yang berdampak pada revenue</li>
+</ol>
+<h4 id="mitigasi">Mitigasi:</h4>
+<ol>
+<li>Menampilkan 3 driver dalam sekali order dalam 1 area yang berdekatan dengan batas 1 km.</li>
+<li>Mengambil admin service product dengan biaya wajar dan ditambah dengan promo per minggu 1x.</li>
+</ol>
+<h4 id="testing-dan-launch">Testing dan Launch</h4>
+<ol>
+<li>Rencana testing menggunakan A/B Testing dengan mencoba menampilkan antara 3 driver atau 1 driver saja jika user order dalam jarak 1 km.</li>
+</ol>
+<h2 id="kesimpulan">Kesimpulan</h2>
+<p>Pertumbuhan pengguna aplikasi Ride Hailing inDrive di Indonesia bisa cepat jika melakukan strategi perbaikan service aplikasi yang menerapkan keakuratan dalam order driver dan juga opsi pembayaran yang beragam.</p>
+
+</content>
+<p>
+  
+  <a href="https://productsolo.github.io/tags/product-management/">#Product Management</a>
+  
+  <a href="https://productsolo.github.io/tags/product-teardown/">#Product Teardown</a>
+  
+</p>
+
+  </main>
+  <footer>Made by <b>Product Solo.</b> <br>
+    <p>Follow us &nbsp;</p>
+    <a href="https://www.linkedin.com/company/product-solo" target="_blank"><i class="fa-brands fa-linkedin"></i></a></footer>
+
+    </body>
+
+</html>
